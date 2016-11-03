@@ -1,0 +1,85 @@
+﻿@model Lab25.Models.dataValidation
+@{
+    ViewBag.Title = "dataInput";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}data
+
+
+<html>
+!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>dataInput</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>dataInput</h2>
+    <div class="center">
+
+        @using (Html.BeginForm())
+        {  
+            @Html.ValidationSummary()         
+            <p>your name:@Html.TextBoxFor(n => n.Name)</p>
+             <p>your Age:    @Html.TextBoxFor(n => n.age)</p>
+            <p>@Html.ActionLink("submit", "display", "Home")</p>
+           
+        }
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
